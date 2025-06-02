@@ -57,7 +57,7 @@ export default {
       this.error = '';
       this.loading = true;
       try {
-        await axios.post('http://localhost:5000/api/auth/register', {
+        await axios.post('https://charging-stations-9su7.onrender.com/api/auth/register', {
           username: this.username,
           password: this.password,
         });

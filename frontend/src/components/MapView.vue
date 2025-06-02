@@ -37,7 +37,7 @@ export default {
     async loadChargers() {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/stations', {
+        const res = await axios.get('https://charging-stations-9su7.onrender.com/api/stations', {
           headers: { Authorization: `Bearer ${token}` }
         });
 

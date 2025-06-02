@@ -260,7 +260,7 @@ export default {
     async fetchChargers() {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/stations", {
+        const res = await axios.get("https://charging-stations-9su7.onrender.com/api/stations", {
           headers: { Authorization: `Bearer ${token}` },
         });
         this.chargers = res.data;
@@ -274,7 +274,7 @@ export default {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.post(
-          "http://localhost:5000/api/stations",
+          "https://charging-stations-9su7.onrender.com/api/stations",
           this.newCharger,
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -296,7 +296,7 @@ export default {
       if (!confirm("Are you sure you want to delete this charger?")) return;
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:5000/api/stations/${id}`, {
+        await axios.delete(`https://charging-stations-9su7.onrender.com/api/stations/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         this.chargers = this.chargers.filter((c) => c._id !== id);
@@ -328,7 +328,7 @@ export default {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.put(
-          `http://localhost:5000/api/stations/${id}`,
+          `https://charging-stations-9su7.onrender.com/api/stations/${id}`,
           this.editForm,
           { headers: { Authorization: `Bearer ${token}` } }
         );
