@@ -71,5 +71,5 @@ A full-stack web application to manage electric vehicle charging stations, allow
 
 You can test the API using the Postman collection below:
 
-👉 [Download Charging Station API Postman Collection](ChargingStationAPI.postman_collection.json)
+👉 [Download Charging Station API Postman Collection](./ChargingStationAPI.postman_collection.json)
 
