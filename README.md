@@ -58,4 +58,11 @@ A full-stack web application to manage electric vehicle charging stations, allow
       # Add your .env file
       npm run dev
 
+-----
+
+## 🌐 Deployment
+
+- 🟢 **Frontend**: Deployed on [Vercel](https://charging-stations-zeta.vercel.app/)
+- 🟡 **Backend**: Deployed on [Render](https://charging-stations-9su7.onrender.com)
+
 
