@@ -50,7 +50,7 @@ A full-stack web application to manage electric vehicle charging stations, allow
       cd backend
       npm install
       # Add your .env file
-      npm start
+      node server.js
 
 ### 3. Setup Frontend:
       cd ../frontend
