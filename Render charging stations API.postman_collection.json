@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "dbed9666-5b0a-49f0-972f-203b060031e5",
+		"name": "Render charging stations API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43952191",
+		"_collection_link": "https://mahima-7067474.postman.co/workspace/Mahima's-Workspace~1d85070f-b196-4de3-80a3-40d33877e43f/collection/43952191-dbed9666-5b0a-49f0-972f-203b060031e5?action=share&source=collection_link&creator=43952191"
+	},
+	"item": [
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"mahima\",\n  \"password\": \"mahima123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgzZDY2Y2I0ZGIyZjg4NGQwNjMyYTAyIn0sImlhdCI6MTc0ODg1OTExMSwiZXhwIjoxNzQ4ODYyNzExfQ.aVQpxrs9FieWhWM0QEpVta4o9Q4T-qnsX6Xxoz-XWwA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/stations/683d7a2b57b5720cc286d207",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"stations",
+						"683d7a2b57b5720cc286d207"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgzZDY2Y2I0ZGIyZjg4NGQwNjMyYTAyIn0sImlhdCI6MTc0ODg1OTExMSwiZXhwIjoxNzQ4ODYyNzExfQ.aVQpxrs9FieWhWM0QEpVta4o9Q4T-qnsX6Xxoz-XWwA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"EV Power Hub 10\",\n  \"location\": {\n    \"latitude\": 35.0760,\n    \"longitude\": 77.8777\n  },\n  \"status\": \"Inactive\",\n  \"powerOutput\": 120,\n  \"connectorType\": \"Type1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/stations",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"stations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgzZDY2Y2I0ZGIyZjg4NGQwNjMyYTAyIn0sImlhdCI6MTc0ODg1OTExMSwiZXhwIjoxNzQ4ODYyNzExfQ.aVQpxrs9FieWhWM0QEpVta4o9Q4T-qnsX6Xxoz-XWwA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/stations",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"stations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgzZDY2Y2I0ZGIyZjg4NGQwNjMyYTAyIn0sImlhdCI6MTc0ODg1OTExMSwiZXhwIjoxNzQ4ODYyNzExfQ.aVQpxrs9FieWhWM0QEpVta4o9Q4T-qnsX6Xxoz-XWwA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"EV Power Hub 20\",\n  \"location\": {\n    \"latitude\": 35.0760,\n    \"longitude\": 77.8777\n  },\n  \"status\": \"Inactive\",\n  \"powerOutput\": 120,\n  \"connectorType\": \"Type1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/stations/683d7a2b57b5720cc286d207",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"stations",
+						"683d7a2b57b5720cc286d207"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"abc\",\n  \"password\": \"abc123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://charging-stations-9su7.onrender.com/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"charging-stations-9su7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
